@@ -1,1 +1,97 @@
-/* No CSS *//*# sourceMappingURL=tand.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #3619da;
+}
+
+.Smile {
+  background-color: transparent;
+  color: #EE366E;
+}
+
+h2 {
+  width: 100px;
+  position: absolute;
+  font-size: 35px;
+  margin-left: 14%;
+  top: -2.6%;
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 22%;
+}
+
+ul li {
+  display: block;
+  position: relative;
+  float: right;
+  margin-top: 0.3%;
+}
+
+li ul {
+  display: none;
+}
+
+ul li:hover {
+  background-color: #EE366E;
+}
+
+ul li a {
+  display: block;
+  padding: 11px 15px 11px 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+li:hover ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li {
+  float: none;
+  font-size: 11px;
+  width: 130px;
+}
+
+li:hover a {
+  background: #EE366E;
+}
+
+li:hover li a:hover {
+  background: #ca5176;
+}
+
+.but {
+  position: relative;
+  padding: 5px;
+  width: 100px;
+  left: 79%;
+  top: 18%;
+  font-size: 19px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: #EE366E;
+}
+
+.but:hover {
+  background-color: #ca5176;
+}
+
+.head {
+  background-color: #3619da;
+  width: 100%;
+}
+/*# sourceMappingURL=tand.css.map */
