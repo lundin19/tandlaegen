@@ -199,7 +199,7 @@ li:hover li a:hover {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 200px;
-  grid-template-rows: 18vh;
+  grid-template-rows: 18.9vh;
   -ms-grid-columns: 350px 350px 350px;
   grid-template-columns: 350px 350px 350px;
       grid-template-areas: "item-a, item-b, item-c";
