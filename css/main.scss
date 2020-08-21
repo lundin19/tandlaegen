@@ -51,7 +51,7 @@ nav {
 
     ul li a {
         display: block;
-        padding: 10px 15px 10px 15px;
+        padding: 11px 15px 11px 15px;
         text-decoration: none;
         color: #ffffff;
         font-size: 20px;
@@ -60,7 +60,7 @@ nav {
     li:hover ul {
         display: block;
         position: absolute;
-        margin-top: 5%;
+        
       }
       
       li:hover li {
@@ -74,7 +74,7 @@ nav {
       }
       
       li:hover li a:hover {
-        background: $primary2;
+        background: #ca5176;
       }
 
       .but {
@@ -88,4 +88,8 @@ nav {
           text-align: center;
           text-decoration: none;
           background-color: $primary2;
+      }
+
+      .but:hover {
+        background-color: #ca5176;
       }
