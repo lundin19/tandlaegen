@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tandlagen</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/kontakt.css">
+</head>
+<body>
+    
+   <nav>
+    <h2>Big<mark class="Smile">Smile</mark></h2>
+
+       <ul id="menu">
+        <li><a href=""> Kontakt </a>
+            <ul>
+                <li><a href=""> Bestil tid </a></li>
+                <li><a href=""> Kontakt os </a></li>
+            </ul>
+        </li>
+        <li><a href=""> Priser </a></li>
+        <li><a href=""> Specialbehandlinger </a>
+            <ul>
+                <li id="sb"><a href=""> Implantater </a></li>
+                <li id="sb"><a href=""> Paradentose </a></li>
+            </ul>
+        </li>
+        <li><a href=""> Klinikken </a></li>
+        <li><a href=""> Personale </a></li>
+        <li><a href=""> Om Tandlægen </a></li>
+          
+       </ul>
+
+       <a href=""><div class="but"> Bestil Tid </div></a>
+   </nav>
+      
+   <section class="sect-kontakt">
+
+    <div class="child3">
+
+      <h3>Kontakt BigSmile</h3>
+      <div class="flex-box">
+        <div class="text-box">
+            <p>Du kan altid kontakte os på vores telefon ved vores åbningstider</p>
+          </div>
+          <div class="img-box unselectable">
+            <img src="/img/FAVPNG_hospital-cartoon_4ugv4XUR.png" alt="" />
+          </div>
+      </div>
+      <form id="form" class="form" method="GET">
+
+        <!-- Grid form container -->
+            <div class="form-contianer">
+            <!--  input -->
+                <div class="field">
+                    <input type="text" id="name" class="input" placeholder=" " />
+                    <label for="name" class="label">Name</label>
+                </div>
+            <!-- Email input -->
+                <div class="field">
+                    <input type="text" id="email" class="input" placeholder=" " />
+                    <label for="email" class="label">Email</label>
+                    <div id="emailError">*Email must contain a @ and a dot*</div>
+                </div>
+            <!-- Password input 
+                <div class="field">
+                    <input type="password" id="password" class="input" placeholder=" " />
+                    <label for="password" class="label">Password</label>
+                </div>
+            -->    
+            <!-- Option slector -->
+                <div class="option-container">
+                    <div class="option-selector" id="form-drop">
+                        <label for="selector" id="selectInneHtml">Emne</label>
+                        <ion-icon name="arrow-down-outline"></ion-icon>
+                    </div>
+                <!-- Selector class & grid for options drop-down -->
+                        <div class="select display-select" id="select"></div>
+            <!-- Option-container div ending -->
+                </div>
+            <!-- Form-container div ending -->
+            </div>
+            <!-- Textarea -->
+            <textarea name="" id="textarea" cols="30" rows="10" ></textarea>
+        <!-- Submit buttons -->
+            <div class="buttons">
+                <button type="submit" id="button-submit">Send</button>
+                <button type="submit" id="button-cancel">Cancel</button>
+            </div>
+        </form>
+        
+
+    </div>
+
+    
+
+  </section>
+
+
+
+
+
+<!-- Footer -->
+
+<div class="footer">
+    <div class="item-a">
+        <h3>
+            Tandlægen </br>
+            Amalgamvej 10 </br>
+            1560 Tandløse
+        </h3>
+    </div>
+
+    <div class="item-b">
+        <h3>Telefon:</h3>
+        <p>55 33 23 16.</p>
+    </div>
+
+    <div class="item-c">
+        <h3>E-mail:</h3>
+        <p>BigSmile@mail.dk</p>
+    </div>
+
+</div>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+/*----------------------*/
+/*#Form*/
+/*----------------------*/
+input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input::-webkit-input-placeholder {
+  font-weight: bold;
+}
+
+input:-ms-input-placeholder {
+  font-weight: bold;
+}
+
+input::-ms-input-placeholder {
+  font-weight: bold;
+}
+
+input::placeholder {
+  font-weight: bold;
+}
+
+#textarea {
+  font-family: inherit;
+  font-size: 0.9em;
+  color: black;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.flex-box .img-box {
+  display: block;
+  width: 50%;
+}
+
+.flex-box .img-box img {
+  pointer-events: none;
+  position: absolute;
+  top: 70%;
+  right: 0%;
+  width: 120px;
+  height: auto;
+}
+
+@media (min-width: 1076px) {
+  .flex-box .img-box img {
+    width: 180px;
+    top: 40%;
+  }
+}
+
+/*----------------------*/
+/*#Form*/
+/*----------------------*/
+#form {
+  /*Styling*/
+  background-color: #EE366E;
+  /*Placemet*/
+}
+
+/*----------------------*/
+/*#Field*/
+/*----------------------*/
+.field, textarea {
+  /*Styling*/
+  width: 100%;
+  border: 2px solid #000;
+  margin-bottom: 3rem;
+  /*Placemet*/
+  /*Positioning box*/
+  position: relative;
+}
+
+/*----------------------*/
+/*#Errors*/
+/*----------------------*/
+.field.error {
+  border: 2px solid #ff1515;
+}
+
+.field .error-circle {
+  /*Styling*/
+  color: #ff1515;
+  /*Placemet*/
+  /*Positioning box*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.4rem;
+}
+
+#emailError {
+  /*Styling*/
+  display: none;
+  font-size: .7rem;
+  /*Placemet*/
+  /*Positioning box*/
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateY(280%);
+          transform: translateY(280%);
+}
+
+textarea {
+  font-size: 1em;
+}
+
+/*----------------------*/
+/*#Input*/
+/*----------------------*/
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.4rem;
+}
+
+.label {
+  /*Styling*/
+  padding: 0.4rem;
+  /*Placemet*/
+  /*Positioning box*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*Transition*/
+  color: #fff;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+input:placeholder-shown + .label {
+  /*Transition*/
+  color: #000;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+/*----------------------*/
+/*#Buttons*/
+/*----------------------*/
+button {
+  /*Styling*/
+  background: #3619da;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  /*Placemet*/
+  /*Positioning box*/
+  position: relative;
+}
+
+button:active,
+button:hover {
+  /*Styling*/
+  border: unset;
+  background-color: #000;
+  color: #FCFCFC;
+}
+
+/*----------------------*/
+/*#Drop-Down*/
+/*----------------------*/
+.option-container {
+  margin-bottom: 2rem;
+}
+
+main {
+  /*Form box main width/length of view*/
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  /*Placemet*/
+  /*Flex*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*Placement/Position everything relative to form*/
+form {
+  position: relative;
+}
+
+#form-drop {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  background: #FCFCFC;
+}
+
+.option-selector {
+  /*Main selector for options (drop-down)*/
+  /*Customization drop-down box*/
+  background-color: unset;
+  border: 2px solid #000;
+  padding: .4rem;
+  -webkit-user-select: none;
+  /*Placemet*/
+  /*Flex*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*Positioning box*/
+  position: relative;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.option-selector > ion-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.select {
+  /*Placement Positioning box*/
+  position: relative;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  /*Select grid customization, and styling*/
+  /*Grid*/
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  /*Styling*/
+  background-color: #fcfcfc;
+  width: inherit;
+  -webkit-user-select: none;
+}
+
+.select > .option {
+  /*Styling*/
+  background-color: unset;
+  border: 2px solid #000;
+  border-bottom: unset;
+  padding: .4rem;
+  /*Placement*/
+  /*Flex*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select > .option:hover {
+  background: #dadada;
+}
+
+.select > .option:last-child {
+  border-bottom: 2px solid #000;
+}
+
+.select > .option:first-child {
+  border-top: unset;
+}
+
+.select:last-child {
+  margin-bottom: 2rem;
+}
+
+/*Hover & Active state*/
+.option:active, .option:hover {
+  background-color: unset;
+}
+
+label:active, label:hover {
+  cursor: pointer;
+}
+
+ion-icon:active, ion-icon:hover {
+  cursor: pointer;
+}
+
+/*Display none toggle class (select)*/
+.display-select {
+  display: none;
+}
+/*# sourceMappingURL=kontakt.css.map */
