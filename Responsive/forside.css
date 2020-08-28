@@ -1,0 +1,51 @@
+@media screen and (max-width: 600px) {
+    .sect-landing {
+      height: 100vh;
+    }
+    .child1 {
+      width: 115%;
+      height: 76%;
+      margin-left: 23px;
+      margin-top: 10%;
+      font-size: 30px;
+    }
+    .child1 p {
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 60px;
+    }
+    .btn-service {
+      position: relative;
+      bottom: 35px;
+      width: 100%;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .child2 {
+      display: none;
+    }
+    .child2 img {
+      display: none;
+    }
+    .sect-velkommen {
+      height: 100vh;
+    }
+    .velk-tekst {
+      width: 115%;
+      height: 76%;
+      margin-left: 23px;
+      margin-top: 20%;
+      font-size: 30px;
+    }
+    .velk-tekst p {
+      font-size: 18px;
+      line-height: 25px;
+      margin-top: 40px;
+    }
+    .velk-img {
+      display: none;
+    }
+    .velk-img img {
+      display: none;
+    }
+  }
