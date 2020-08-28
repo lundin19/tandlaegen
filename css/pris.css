@@ -141,6 +141,34 @@ li:hover li a:hover {
   margin-left: 0.8%;
 }
 
+.pgrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 30% 30% 20% 10%;
+      grid-template-columns: 10% 30% 30% 20% 10%;
+  -ms-grid-rows: 700px;
+      grid-template-rows: 700px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pgrid .item1 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.pgrid .item2 {
+  margin-top: 14%;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
+}
+
 /* Footer */
 .footer {
   display: -ms-grid;

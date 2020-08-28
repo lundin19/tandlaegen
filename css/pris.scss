@@ -137,7 +137,25 @@ nav {
         margin-left: 0.8%;
     }
 
+.pgrid {
+  display: grid;
+  grid-template-columns: 10% 30% 30% 20% 10%;
+  grid-template-rows: 700px;
+  justify-content: center;
+  align-items: center;
 
+
+  .item1 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+
+  .item2 {
+    margin-top: 14%;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
 
 
 
