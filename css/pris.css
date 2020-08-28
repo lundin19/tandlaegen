@@ -144,8 +144,8 @@ li:hover li a:hover {
 .pgrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10% 30% 30% 20% 10%;
-      grid-template-columns: 10% 30% 30% 20% 10%;
+  -ms-grid-columns: 10% 60% 10%;
+      grid-template-columns: 10% 60% 10%;
   -ms-grid-rows: 700px;
       grid-template-rows: 700px;
   -webkit-box-pack: center;
@@ -156,17 +156,54 @@ li:hover li a:hover {
           align-items: center;
 }
 
-.pgrid .item1 {
+.pgrid table {
+  -ms-grid-column-align: center;
+      justify-self: center;
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 2;
 }
 
-.pgrid .item2 {
-  margin-top: 14%;
-  -ms-grid-column: 3;
-      grid-column-start: 3;
-  grid-column-end: 4;
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10%;
+}
+
+table th {
+  font-size: 30px;
+}
+
+table tr {
+  width: 700px;
+}
+
+table td {
+  font-size: 20px;
+}
+
+table .move {
+  width: 230px;
+}
+
+td, th {
+  text-align: left;
+  padding-left: 15%;
+  padding-top: 3%;
 }
 
 /* Footer */

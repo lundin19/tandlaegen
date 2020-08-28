@@ -139,25 +139,61 @@ nav {
 
 .pgrid {
   display: grid;
-  grid-template-columns: 10% 30% 30% 20% 10%;
+  grid-template-columns: 10% 60% 10%;
   grid-template-rows: 700px;
   justify-content: center;
   align-items: center;
 
 
-  .item1 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-  }
-
-  .item2 {
-    margin-top: 14%;
-    grid-column-start: 3;
-    grid-column-end: 4;
-  }
+table {
+  justify-self: center;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
 }
 
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
 
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10%;
+
+  th {
+    font-size: 30px;
+  }
+
+tr {
+ width: 700px;
+}
+
+  td {
+    font-size: 20px;
+  }
+
+  .move {
+    width: 230px;
+  }
+
+}
+
+td, th {
+  text-align: left;
+  padding-left: 15%;
+  padding-top: 3%;
+}
 
       /* Footer */
 .footer {

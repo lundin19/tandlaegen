@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpecialBehandling</title>
     <link rel="stylesheet" href="/css/special.css">
+    <link rel="stylesheet" href="/Responsive/Special-respon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Responsive/menu.css">
+    <link rel="stylesheet" href="/Responsive/footer.css">
 </head>
 <body>
     <nav>
@@ -33,6 +37,33 @@
            <a href=""><div class="but"> Bestil Tid </div></a>
        </nav>
 
+       <!-- Top Navigation Menu -->
+<div class="topnav">
+    <a class="active">Big<mark class="Smile">Smile</mark></a>
+    <div id="myLinks">
+      <a href="#"> Om Tandlægen </a>
+      <a href="#"> Personale </a>
+      <a href="#"> Klinikken </a>
+      <a href="#"> Specialbehandlinger </a>
+      <a href="#"> Priser </a>
+      <a href="#"> Kontakt </a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+
+       
        <div class="head">
         <div class="item">   
             <h3> SpecialBehandling </h3>

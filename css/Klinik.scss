@@ -191,7 +191,6 @@ nav {
           display: none;
           position: fixed;
           z-index: 1;
-          padding: 10px 62px 0px 62px;
           left: 0;
           top: 0;
           width: 100%;
@@ -205,6 +204,8 @@ nav {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
+          justify-content: center;
+          align-items: center;
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
@@ -213,6 +214,7 @@ nav {
               -ms-flex-pack: center;
                   justify-content: center;
           margin: auto;
+          margin-top: 3%;
           padding: 0 0 0 0;
           width: 100%;
           max-width: 1200px;
@@ -222,6 +224,7 @@ nav {
           display: none;
           margin-left: auto;
           margin-right: auto;
+          width: 800px;
         }
         
         .image-slide {
@@ -238,13 +241,14 @@ nav {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
+          width: 1200px;
           -webkit-box-orient: horizontal;
           -webkit-box-direction: normal;
               -ms-flex-direction: row;
                   flex-direction: row;
           -webkit-box-pack: justify;
               -ms-flex-pack: justify;
-                  justify-content: space-between;
+                  justify-content: center;
           margin-left: auto;
           margin-right: auto;
         }
@@ -273,7 +277,7 @@ nav {
           color: black;
           position: absolute;
           top: 0;
-          right: 6%;
+          right: 3%;
           font-size: 35px;
           font-weight: bold;
         }
@@ -306,12 +310,12 @@ nav {
         }
         
         .next {
-          right: 20%;
+          right: 25%;
           border-radius: 3px 0 0 3px;
         }
         
         .previous {
-          left: 19%;
+          left: 24%;
         }
         
         .previous:hover,
@@ -323,7 +327,7 @@ nav {
           display: block;
           margin-left: auto;
           margin-right: auto;
-          margin-top: 2%;
+          margin-top: 3%;
           width: 93%;
         }
         
@@ -331,7 +335,7 @@ nav {
           display: block;
           margin-left: auto;
           margin-right: auto;
-          margin-top: 2%;
+          margin-top: 3%;
           width: 90%;
         }
         
@@ -339,7 +343,7 @@ nav {
           display: block;
           margin-left: auto;
           margin-right: auto;
-          margin-top: 2%;
+          margin-top: 3%;
           width: 90%;
         }
 
@@ -347,6 +351,20 @@ nav {
       height: 500px;
     }
 
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+      position: relative;
+    }
+    
+    .topnav #myLinks {
+      display: none;
+    }
+    
+    .topnav a {
+      display: none;
+    }
       
     /* Footer */
 .footer {

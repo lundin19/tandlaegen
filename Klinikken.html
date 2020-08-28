@@ -6,6 +6,9 @@
     <title>Klinikken</title>
     <link rel="stylesheet" href="/css/Klinik.css">
     <link rel="stylesheet" href="/Responsive/Klink-respon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Responsive/menu.css">
+    <link rel="stylesheet" href="/Responsive/footer.css">
 </head>
 <body>
     <nav>
@@ -35,7 +38,31 @@
 
        </nav>
 
-
+<!-- Top Navigation Menu -->
+<div class="topnav">
+    <a class="active">Big<mark class="Smile">Smile</mark></a>
+    <div id="myLinks">
+      <a href="#"> Om Tandlægen </a>
+      <a href="#"> Personale </a>
+      <a href="#"> Klinikken </a>
+      <a href="#"> Specialbehandlinger </a>
+      <a href="#"> Priser </a>
+      <a href="#"> Kontakt </a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 
        <div class="khead">
         <div class="kitem">   

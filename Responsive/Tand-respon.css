@@ -1,36 +1,8 @@
 @media only screen and (max-width: 601px){
-    .nav {
-        width: 100%;
-        height: 0px;
-        background-color: transparent;
-        border-bottom: 1px transparent solid;
-        }
-    
-    
-    ul {
-       display: none;
-      }
-      
-    ul li {
-       display: none;
-      }
-      
-      li ul {
-       display: none;
-      }
-    
-    .but {
-        display: none;
-    }
-    
-    h2 {
-        display: none;
-      }
-
 
       .head {
         display: grid;
-        grid-template-columns: 14% 20.8% 25% 30% 10%;
+        grid-template-columns: 8% 26.8% 25% 30% 10%;
         grid-template-rows: 150px;
         background-color: #3619da;
         justify-content: center;
@@ -44,7 +16,7 @@
         .head .item {
             grid-column-start: 2;
             grid-column-end: 2;
-            margin-top: 13%;
+            margin-top: 15%;
         }
     
         .head .thead {
@@ -57,13 +29,14 @@
     
         .head .item h3 {
             color: #ffffff;
-            font-size: 20px;
+            font-size: 25px;
             margin-bottom: 0;
+            width: 180px;
         }
     
         .head .item p {
             color: #ffffff;
-            font-size: 14px;
+            font-size: 16px;
             margin-left: 0.8%;
         }
     
@@ -91,7 +64,7 @@
     .ot-con .titem {
         grid-column-start: 4;
         grid-column-end: 6;
-        margin-left: 5%;
+        margin-left: 0%;
     }
 
     .ot-con h3 {
@@ -102,56 +75,8 @@
     }
 
     .ot-con p {
-        width: 200px;
+        width: 300px;
         font-size: 16px;
-        text-align: center;
+        text-align: left;
     }
-
-
-    /* Footer */
-.footer {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 200px;
-        grid-template-rows: 150px 150px 150px;
-    -ms-grid-columns: 350px 350px 350px;
-        grid-template-columns: 200px;
-        grid-template-areas: "item-a, item-b, item-c";
-    grid-column-gap: 100px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-            align-items: center;
-    background-color: #3619da;
-    margin-top: 7%;
-    color: #ffffff;
   }
-  
-  .footer h3 {
-    font-size: 25px;
-    text-align: center;
-  }
-  
-  .footer p {
-      text-align: center;
-    font-size: 18px;
-  }
-  
-  .footer .item-a {
-    margin-top: 3%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  .footer .item-b {
-    margin-top: 3%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  .footer .item-c {
-    margin-top: 3%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
