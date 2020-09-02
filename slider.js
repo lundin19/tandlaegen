@@ -37,9 +37,26 @@ const sliderContainer = document.querySelector('.sliderContainer')
 const previous = document.querySelector('.previous')
 const next = document.querySelector('.next')
 
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+      removeContainerChildren()
+      arrType()
+      arrType(personalSec)
+      next.style.display = 'none'
+      previous.style.display = 'none'
+    } else {
+      removeContainerChildren()
+      arrType()
+      
+    }
+  }
+  
+  let x = window.matchMedia("(max-width: 700px)")
+
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state changes 
 // Run first array => arrType(arr = images)
 // hide first Btn
-arrType()
 previous.style.display = 'none'
 
 previous.addEventListener('click', () => {
