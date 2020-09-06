@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priser</title>
-    <link rel="stylesheet" href="/css/pris.css">
-    <link rel="stylesheet" href="/Responsive/Pris-respon.css">
+    <title>Klinikken</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/kalender.css">
+    <link rel="stylesheet" href="/css/Klinik.css">
+    <link rel="stylesheet" href="/Responsive/Klink-respon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/Responsive/menu.css">
     <link rel="stylesheet" href="/Responsive/footer.css">
 </head>
 <body>
-        
-   <nav>
+       
+  <nav>
     <h2>Big<mark class="Smile">Smile</mark></h2>
 
        <ul id="menu">
@@ -64,60 +66,32 @@
       }
       </script>
 
-
-       <div class="head">
-        <div class="item">   
-            <h3> Priser </h3>
-            <p> Priser for behandling </p>
+       <div class="khead">
+        <div class="kitem">   
+            <h3> Klinikken </h3>
+            <p> Vores klinik </p>
         </div>
-           <img src="/img/tand-head.png" class="thead">
+           <img src="/img/klinik.png" class="thead">
        </div>
 
-       <div class="pgrid">
 
-    <table style="width: 100%;">
-        <tr>
-            <th> BEHANDLINGER </th>
-            <th class="move"> PRISER </th>
-        </tr>
-        <tr>
-            <td> Rodbehandling i fortand, overkæbe (eksklusiv fyldninger). </td>
-            <td class="move"> 650 - 1200 kr. </td>
-        </tr>
-        <tr>
-            <td> Flerfladet plastfyldning på lille kindtand (præmolar) på 2 flader. </td>
-            <td class="move"> 350 - 950 kr. </td>
-        </tr>
-        <tr>
-            <td> Flerfladet plastfyldning på stor kindtand (molar) i undermund på 3 flader. </td>
-            <td class="move"> 650 - 1500 kr. </td>
-        </tr>
-        <tr>
-            <td> Krone af metal med påbrændt porcelæn i stor kindtand (molar) i undermund. </td>
-            <td class="move"> 3600 - 6000 kr. </td>
-        </tr>
-        <tr>
-            <td> Rodbehandling i 3 kanaler, kindtand i undermunden (eksklusiv fyldninger). </td>
-            <td class="move"> 1255 - 2205 kr. </td>
-        </tr>
-        <tr> 
-            <td> Bro 3 led </td>
-            <td class="move"> 9500 - 18000 kr. </td>
-        </tr>
-        <tr>
-            <td> Lokalbedøvelse. </td>
-            <td class="move"> 100 - 300 kr. </td>
-        </tr>
-        <tr>
-            <td> Operativ fjernelse af visdomstand (ikke ekstraktion) </td>
-            <td class="move"> 525 - 2500 kr. </td>
-        </tr>
-    </table>
-</div>
 
-    
+       
+       <div class="content">
 
-        <!-- Footer -->
+        <div class="area-buttons">
+            <button class="info" name="pastDates">Disable past dates</button>
+            <button class="info" name="availableDates">Set available dates</button>
+            <button class="info" name="availableWeekDays">Set available weekdays</button>
+        </div>
+
+         <div id="myCalendar" class="vanilla-calendar"></div>
+
+        
+
+
+
+     <!-- Footer -->
 
      <div class="footer">
         <div class="item-a">
@@ -139,5 +113,7 @@
         </div>
   
     </div>
+
+    <script src="app.js"></script> 
 </body>
 </html>

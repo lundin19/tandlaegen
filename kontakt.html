@@ -11,32 +11,58 @@
     <link rel="stylesheet" href="/Responsive/footer.css">
 </head>
 <body>
+       
+    <nav>
+        <h2>Big<mark class="Smile">Smile</mark></h2>
     
-   <nav>
-    <h2>Big<mark class="Smile">Smile</mark></h2>
-
-       <ul id="menu">
-        <li><a href=""> Kontakt </a>
-            <ul>
-                <li><a href=""> Bestil tid </a></li>
-                <li><a href=""> Kontakt os </a></li>
-            </ul>
-        </li>
-        <li><a href=""> Priser </a></li>
-        <li><a href=""> Specialbehandlinger </a>
-            <ul>
-                <li id="sb"><a href=""> Implantater </a></li>
-                <li id="sb"><a href=""> Paradentose </a></li>
-            </ul>
-        </li>
-        <li><a href=""> Klinikken </a></li>
-        <li><a href=""> Personale </a></li>
-        <li><a href=""> Om Tandlægen </a></li>
+           <ul id="menu">
+            <li><a href="kontakt.html"> Kontakt </a>
+                <ul>
+                    <li><a href="bestil.html"> Bestil tid </a></li>
+                    <li><a href=""> Kontakt os </a></li>
+                </ul>
+            </li>
+            <li><a href="Priser.html"> Priser </a></li>
+            <li><a href="special.html"> Specialbehandlinger </a>
+                <ul>
+                    <li id="sb"><a href=""> Implantater </a></li>
+                    <li id="sb"><a href=""> Paradentose </a></li>
+                </ul>
+            </li>
+            <li><a href="Klinikken.html"> Klinikken </a></li>
+            <li><a href="personale.html"> Personale </a></li>
+            <li><a href="tandlaegen.html"> Om Tandlægen </a></li>
+              
+           </ul>
+    
+           <a href="bestil.html"><div class="but"> Bestil Tid </div></a>
+       </nav>
           
-       </ul>
-
-       <a href=""><div class="but"> Bestil Tid </div></a>
-   </nav>
+       <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a class="active">Big<mark class="Smile">Smile</mark></a>
+      <div id="myLinks">
+        <a href="tandlaegen.html"> Om Tandlægen </a>
+        <a href="personale.html"> Personale </a>
+        <a href="Klinikken.html"> Klinikken </a>
+        <a href="special.html"> Specialbehandlinger </a>
+        <a href="Priser.html"> Priser </a>
+        <a href="kontakt.html"> Kontakt </a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+      <script>
+          function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+          </script>
       
    <div class="head">
     <div class="item">   
